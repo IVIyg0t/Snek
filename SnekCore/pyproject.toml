@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SnekCore"
+version = "0.1.0"
+description = "A Microlibrary / Plugin system"
+dependencies = [
+    "pydantic",
+    "rich",
+    "typer"
+]
+
+[project.optional-dependencies]
+dev = ["pre-commit", "pdoc3", "black"]
+
+[project.scripts]
+snek = "Snek.SnekCore.cli:app"
+
+[project.entry-points."snek_types"]
+simple_snek = "Snek.SnekCore.SimpleSnek:SimpleSnek"

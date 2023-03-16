@@ -1,0 +1,9 @@
+pyproject.toml
+CuteSnek.egg-info/PKG-INFO
+CuteSnek.egg-info/SOURCES.txt
+CuteSnek.egg-info/dependency_links.txt
+CuteSnek.egg-info/entry_points.txt
+CuteSnek.egg-info/requires.txt
+CuteSnek.egg-info/top_level.txt
+SnekPlugins/CuteSnek.py
+SnekPlugins/__init__.py

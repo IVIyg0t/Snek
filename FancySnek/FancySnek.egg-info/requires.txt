@@ -1,0 +1,8 @@
+pydantic
+rich
+SnekCore@ file://../SnekCore
+
+[dev]
+pre-commit
+pdoc3
+black

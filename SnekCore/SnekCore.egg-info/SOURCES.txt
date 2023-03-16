@@ -1,0 +1,12 @@
+pyproject.toml
+Snek/SnekCore/PluginMount.py
+Snek/SnekCore/SimpleSnek.py
+Snek/SnekCore/SnekMountPoint.py
+Snek/SnekCore/__init__.py
+Snek/SnekCore/cli.py
+SnekCore.egg-info/PKG-INFO
+SnekCore.egg-info/SOURCES.txt
+SnekCore.egg-info/dependency_links.txt
+SnekCore.egg-info/entry_points.txt
+SnekCore.egg-info/requires.txt
+SnekCore.egg-info/top_level.txt

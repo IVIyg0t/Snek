@@ -1,0 +1,8 @@
+pydantic
+rich
+typer
+
+[dev]
+pre-commit
+pdoc3
+black

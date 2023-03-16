@@ -1,0 +1,2 @@
+[snek_types]
+fancy_snek = SnekPlugins.FancySnek:FancySnek

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CuteSnek"
+version = "0.1.0"
+description = "A Microlibrary / Plugin system"
+dependencies = [
+    "pydantic",
+    "rich",
+    "SnekCore @ file://../SnekCore"
+]
+
+[project.optional-dependencies]
+dev = ["pre-commit", "pdoc3", "black"]
+
+[project.entry-points."snek_types"]
+cute_snek = "SnekPlugins.CuteSnek:CuteSnek"
