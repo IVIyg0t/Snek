@@ -1,2 +1,0 @@
-[snek_types]
-cute_snek = SnekPlugins.CuteSnek:CuteSnek

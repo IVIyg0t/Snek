@@ -1,5 +1,0 @@
-[console_scripts]
-snek = Snek.SnekCore.cli:app
-
-[snek_types]
-simple_snek = Snek.SnekCore.SimpleSnek:SimpleSnek

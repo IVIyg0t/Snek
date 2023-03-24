@@ -1,9 +1,0 @@
-pyproject.toml
-FancySnek.egg-info/PKG-INFO
-FancySnek.egg-info/SOURCES.txt
-FancySnek.egg-info/dependency_links.txt
-FancySnek.egg-info/entry_points.txt
-FancySnek.egg-info/requires.txt
-FancySnek.egg-info/top_level.txt
-SnekPlugins/FancySnek.py
-SnekPlugins/__init__.py
