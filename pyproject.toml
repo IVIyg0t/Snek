@@ -25,6 +25,10 @@ jupyter = "^1.0.0"
 notebook = "^6.5.2"
 pandera = "^0.13.4"
 hypothesis = "^6.68.2"
+mkdocs = "^1.4.2"
+mkdocstrings = {extras = ["python"], version = "^0.20.0"}
+mkdocs-material = "^9.1.4"
+mkdocs-jupyter = "^0.24.1"
 
 [build-system]
 requires = ["poetry-core"]
