@@ -8,11 +8,11 @@ version = "0.1.0"
 description = "A Microlibrary / Plugin system"
 dependencies = [
     "pydantic",
-    "rich",
-    "SnekCore @ file://../SnekCore"
+    "rich"
 ]
 
 [project.optional-dependencies]
+all = ["snekcore"]
 dev = ["pre-commit", "pdoc3", "black"]
 
 [project.entry-points."snek_types"]
