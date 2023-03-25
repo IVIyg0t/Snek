@@ -1,0 +1,3 @@
+# SimpleSnek
+
+::: Snek.SnekCore.SimpleSnek

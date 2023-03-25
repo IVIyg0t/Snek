@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 pydantic = "^1.10.5"
 rich = "^13.3.1"
 snekcore = {path = "SnekCore", develop = true}
