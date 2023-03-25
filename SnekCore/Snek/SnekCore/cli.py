@@ -14,7 +14,7 @@ def load_plugins():
 
     Returns:
         A dictionary of plugin names mapped
-        to : class : ` snek. entry_point. EntryPoint `
+            to : class : ` snek. entry_point. EntryPoint `
     """
     plugins = dict()
     # Load plugins from entry points.
@@ -33,7 +33,7 @@ def get_sneks():
 
     Returns:
         A list of plugin names to run on this host or an empty list
-        if there are none. Note that plugins are loaded in the order they were added
+            if there are none. Note that plugins are loaded in the order they were added
     """
     return [p.__name__ for p in SnekMountPoint.plugins]
 
@@ -48,7 +48,7 @@ def get_snek(name):
 
     Returns:
         plugin or None if not found or error while trying
-        to get snek by name ( no plugin found
+            to get snek by name ( no plugin found
     """
     try:
         return next(filter(lambda p: p.__name__ == name, SnekMountPoint.plugins))
@@ -75,9 +75,8 @@ def get(name: str):
     Args:
         name: Name of the Snoek
     """
-    """List available types of Sneks."""
     load_plugins()
     snek = get_snek(name)
-    # Prints the snek. snek. snek.
+
     if snek:
         print(snek().snek)

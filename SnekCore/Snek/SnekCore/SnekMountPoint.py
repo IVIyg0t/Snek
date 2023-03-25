@@ -12,8 +12,8 @@ class SnekMountPoint(metaclass=PluginMount):
 
 
         Returns:
-            A string that is the same as the input
-            but without the prefix and suffix ( if any ) added
+            A string that is the same as the
+                input but without the prefix and suffix ( if any ) added
         """
         return ""
 
@@ -25,6 +25,6 @@ class SnekMountPoint(metaclass=PluginMount):
 
         Returns:
             The snek as a string or None if
-            there is no snek at the moment of reading
+                there is no snek at the moment of reading
         """
         return self.snek

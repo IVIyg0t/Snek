@@ -19,6 +19,6 @@ class SimpleSnek(SnekMountPoint):
 
         Returns:
             the string to read or None if there is
-            no value to read or an empty string if the value is
+                no value to read or an empty string if the value is
         """
         return SIMPLE_SNEK
