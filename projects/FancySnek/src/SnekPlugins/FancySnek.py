@@ -19,4 +19,17 @@ FANCY_SNEK = """[green]\
 class FancySnek(SnekMountPoint):
     @property
     def snek(self) -> str:
+        """
+        The snek function returns a string containing the ASCII art of a snek.
+
+        Args:
+            self: Refer to the instance of the class
+
+        Returns:
+            A string
+
+        Doc Author:
+            Trelent
+        """
+
         return FANCY_SNEK

@@ -13,12 +13,17 @@ class SimpleSnek(SnekMountPoint):
     @property
     def snek(self) -> str:
         """
-        Return the snek value. This is used to distinguish between a non - existent
-        value and a null value that can be read by : meth : ` read `.
+        The snek function returns a simple snek string.
 
+
+        Args:
+            self: Refer to the object itself
 
         Returns:
-            the string to read or None if there is
-                no value to read or an empty string if the value is
+            The string 'snek'
+
+        Doc Author:
+            Trelent
         """
+
         return SIMPLE_SNEK

@@ -3,17 +3,20 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "FancySnek"
+name = "snekcore"
 version = "0.1.0"
 description = "A Microlibrary / Plugin system"
 dependencies = [
     "pydantic",
     "rich",
+    "typer"
 ]
 
 [project.optional-dependencies]
-all = ["snekcore"]
-dev = ["pre-commit", "pdoc3", "black"]
+dev = ["pre-commit", "black"]
+
+[project.scripts]
+snek = "Snek.SnekCore.cli:app"
 
 [project.entry-points."snek_types"]
-fancy_snek = "SnekPlugins.FancySnek:FancySnek"
+simple_snek = "Snek.SnekCore.SimpleSnek:SimpleSnek"

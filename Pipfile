@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.10"
+
+[packages]
+pydantic = "*"
+rich = "*"
+typer = "*"
+snekcore = {path = "./projects/SnekCore"}
+fancysnek = {path = "./projects/FancySnek"}
+cutesnek = {path = "./projects/CuteSnek"}
+
+[dev-packages]
+pre-commit = "*"
+pdoc3 = "*"
+black = "*"
+ipykernel = "*"
+jupyter = "*"
+notebook = "*"
+mkdocs = "*"
+mkdocstrings = {extras = ["python"], version = "*"}
+mkdocs-material = "*"
+mkdocs-jupyter = "*"
+snekcore = {editable = true, path = "./projects/SnekCore", extras = ["dev"]}
+fancysnek = {editable = true, path = "./projects/FancySnek", extras = ["dev"]}
+cutesnek = {editable = true, path = "./projects/CuteSnek", extras = ["dev"]}
