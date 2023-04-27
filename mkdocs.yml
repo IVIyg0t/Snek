@@ -1,0 +1,23 @@
+site_name: Snek Microlib
+repo_url: https://github.com/IVIyg0t/Snek
+repo_name: Snek Microlib
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: light green
+    accent: indigo
+
+nav:
+  - Guides:
+      - Create A Plugin: Notebooks/CreateAPlugin.ipynb
+  - SnekPlugins:
+      - CuteSnek: SnekPlugins/CuteSnek.md
+  - API:
+      - PluginMount: PluginMount.md
+      - SnekMountPoint: SnekMountPoint.md
+      - SimpleSnek: SimpleSnek.md
+
+plugins:
+  - mkdocstrings
+  - mkdocs-jupyter

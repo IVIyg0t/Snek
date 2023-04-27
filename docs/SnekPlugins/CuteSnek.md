@@ -1,0 +1,3 @@
+# CuteSnek
+
+::: SnekPlugins.CuteSnek.CuteSnek

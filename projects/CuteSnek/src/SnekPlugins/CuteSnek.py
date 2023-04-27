@@ -1,6 +1,6 @@
 from Snek.SnekCore.SnekMountPoint import SnekMountPoint
 
-CUTE_SNEK = """[green]
+CUTE_SNEK = r"""[green]
                     /^\/^\
                   _|__|  O|
          \/     /~     \_/ \
@@ -24,4 +24,17 @@ CUTE_SNEK = """[green]
 class CuteSnek(SnekMountPoint):
     @property
     def snek(self) -> str:
+        """
+        The snek function returns a cute snek
+
+        Args:
+            self: Refer to the object itself
+
+        Returns:
+            The string cute_snek
+
+        Doc Author:
+            Trelent
+        """
+
         return CUTE_SNEK
