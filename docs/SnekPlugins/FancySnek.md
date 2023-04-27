@@ -1,0 +1,3 @@
+# FancySnek
+
+::: SnekPlugins.FancySnek.FancySnek
