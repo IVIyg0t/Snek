@@ -13,6 +13,7 @@ nav:
       - Create A Plugin: Notebooks/CreateAPlugin.ipynb
   - SnekPlugins:
       - CuteSnek: SnekPlugins/CuteSnek.md
+      - FancySnek: SnekPlugins/FancySnek.md
   - API:
       - PluginMount: PluginMount.md
       - SnekMountPoint: SnekMountPoint.md
