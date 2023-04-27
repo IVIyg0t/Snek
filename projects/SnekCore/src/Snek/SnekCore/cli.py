@@ -1,28 +1,8 @@
 import typer
-import pkg_resources
 from rich import print
 from Snek.SnekCore.SnekMountPoint import SnekMountPoint
 
 app = typer.Typer()
-
-
-def load_plugins():
-    """
-    Load and return all plugins. This is a convenience function for
-    use by plugins that need to be loaded in order to get a list of plugins.
-
-
-    Returns:
-        A dictionary of plugin names mapped
-            to : class : ` snek. entry_point. EntryPoint `
-    """
-    plugins = dict()
-    # Load plugins from entry points.
-    for entry_point in pkg_resources.iter_entry_points("snek_types"):
-        plugins[entry_point.name] = entry_point
-        entry_point.load()
-
-    return plugins
 
 
 def get_sneks():
@@ -35,7 +15,10 @@ def get_sneks():
         A list of plugin names to run on this host or an empty list
             if there are none. Note that plugins are loaded in the order they were added
     """
-    return [p.__name__ for p in SnekMountPoint.plugins]
+    if len(SnekMountPoint.plugins) == 0:
+        SnekMountPoint.load()
+
+    return list(SnekMountPoint.plugins.keys())
 
 
 def get_snek(name):
@@ -63,7 +46,6 @@ def list_sneks():
     List sneks and their configuration in the config.py file.
     This is a wrapper around get_sneks
     """
-    load_plugins()
     print(get_sneks())
 
 
@@ -75,7 +57,6 @@ def get(name: str):
     Args:
         name: Name of the Snoek
     """
-    load_plugins()
     snek = get_snek(name)
 
     if snek:

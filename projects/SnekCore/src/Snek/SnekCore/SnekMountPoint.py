@@ -3,6 +3,8 @@ from Snek.SnekCore.PluginMount import PluginMount
 
 
 class SnekMountPoint(metaclass=PluginMount):
+    # entry_point = "snek_types"
+
     @property
     @abstractmethod
     def snek(self) -> str:
