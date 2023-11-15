@@ -18,7 +18,7 @@ def get_sneks():
     if len(SnekMountPoint.plugins) == 0:
         SnekMountPoint.load()
 
-    return list(SnekMountPoint.plugins.keys())
+    return SnekMountPoint.plugins
 
 
 def get_snek(name):
@@ -34,7 +34,8 @@ def get_snek(name):
             to get snek by name ( no plugin found
     """
     try:
-        return next(filter(lambda p: p.__name__ == name, SnekMountPoint.plugins))
+        sneks = get_sneks()
+        return sneks[name]
     except Exception:
         print("[red]Oops! Snek doesn't exist.[/red]")
         print("[yellow]Try `snek list` to see a list of available sneks.[/yellow]")
@@ -46,7 +47,7 @@ def list_sneks():
     List sneks and their configuration in the config.py file.
     This is a wrapper around get_sneks
     """
-    print(get_sneks())
+    print(list(get_sneks().keys()))
 
 
 @app.command()
@@ -57,7 +58,5 @@ def get(name: str):
     Args:
         name: Name of the Snoek
     """
-    snek = get_snek(name)
-
-    if snek:
+    if snek := get_snek(name):
         print(snek().snek)

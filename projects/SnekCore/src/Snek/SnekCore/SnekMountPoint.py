@@ -1,9 +1,8 @@
 from abc import abstractmethod
-from Snek.SnekCore.PluginMount import PluginMount
-
+from spf.PluginMount import PluginMount
 
 class SnekMountPoint(metaclass=PluginMount):
-    # entry_point = "snek_types"
+    entry_point = "snek_types"
 
     @property
     @abstractmethod

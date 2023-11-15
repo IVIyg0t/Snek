@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [requires]
-python_version = "3.10"
+python_version = "3.11"
 
 [packages]
 pydantic = "*"
@@ -13,6 +13,7 @@ typer = "*"
 snekcore = {path = "./projects/SnekCore"}
 fancysnek = {path = "./projects/FancySnek"}
 cutesnek = {path = "./projects/CuteSnek"}
+spf = {git = "git+https://github.com/IVIyg0t/SimplePluginFramework.git"}
 
 [dev-packages]
 pre-commit = "*"
@@ -28,3 +29,4 @@ mkdocs-jupyter = "*"
 snekcore = {editable = true, path = "./projects/SnekCore", extras = ["dev"]}
 fancysnek = {editable = true, path = "./projects/FancySnek", extras = ["dev"]}
 cutesnek = {editable = true, path = "./projects/CuteSnek", extras = ["dev"]}
+spf = {editable = true, path = "../SimplePluginFramework"}
